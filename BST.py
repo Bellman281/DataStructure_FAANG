@@ -7,6 +7,8 @@ class Node():
  
 
 def insert(root,key):
+    if root is None:
+       return Node(key) 
     if root.val == key:
        return root
     elif root.val > key:
