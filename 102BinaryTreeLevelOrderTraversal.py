@@ -6,6 +6,12 @@ Given the root of a binary tree, return the level order traversal of its nodes' 
 Input: root = [3,9,20,null,null,15,7]
 Output: [[3],[9,20],[15,7]]
 
+Solution: 
+Breadth First Search (BFS)
+We scan through the tree level by level, following the order of height, from top to bottom.
+The nodes on higher level would be visited before the ones with lower levels.
+
+
 '''
 
 from typing import List
