@@ -1,8 +1,8 @@
 ### BST Class:
 class Node():
-  def __init__ (self, key):
-    self.left = None
-    self.right = None
+  def __init__ (self,left = None, right = None ,key):
+    self.left = left
+    self.right = right
     self.val = key
  
 
