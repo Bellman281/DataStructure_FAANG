@@ -30,16 +30,27 @@ class Solution:
         result = []
         if not root:
             return result
-            
+        
+        
+        #initiate the queue with a root and start from level 0
         q = collections.deque()
         q.append( root )
         
+        # while queue is not empty
         while q :
-            qLen = len(q)
+            
+            # start the current level by an empty list
             level = []
+            # compute the number of elements in current level
+            qLen = len(q)
+            
+            #loop through the elements.
             for i in range(qLen):
+                # popout all the elements from the queue 
                 node = q.popleft()
+                
                 if node:
+                   ## add each element to the current level and their child into queue for next level
                    level.append(node.val)
                    q.append(node.left)
                    q.append(node.right)
