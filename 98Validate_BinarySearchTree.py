@@ -12,7 +12,7 @@ Both the left and right subtrees must also be binary search trees.
 Input: root = [2,1,3]
 Output: true
 
-DFS 
+BFS 
 In order : Left,Right,Right
 Pre order : Root, Left, Right
 Postorder : Left, Right, Root
